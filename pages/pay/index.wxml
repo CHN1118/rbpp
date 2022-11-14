@@ -1,0 +1,11 @@
+<view style="{{show}}">
+    <view style="padding:30px;font-size:14px;line-height:30px">
+        <view style="color:#4285f4;text-align:center;height:50px;">订单正在支付...</view>
+        <text>订单名称：{{title}}
+订单编号：{{trade_no}}</text>
+    </view>
+    <view style=" display: flex;  flex-direction: row;  flex-wrap: wrap;">
+        <button bindtap="requestPayment" style="width:40%;height:35px;line-height:35px;font-size:15px;background:#4285f4;color:#fff">支付</button>
+        <button bindtap="goBack" style="width:40%;height:35px;line-height:35px;font-size:15px">取消</button>
+    </view>
+</view>

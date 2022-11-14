@@ -1,0 +1,18 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/pay/index",
+        "pages/zone/index",
+        "pages/tool/index",
+        "pages/luopan/index",
+        "pages/service/index",
+        "pages/show/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f3f3f3",
+        "navigationBarTitleText": "易经排盘起局",
+        "navigationBarTextStyle": "black"
+    }
+}

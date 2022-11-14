@@ -1,0 +1,32 @@
+<view style="font-size:50rpx;color:#333;text-align:center;height:50px">
+    <div style="position:absolute;left:0px;font-size:32rpx;padding:10px">度数：{{showRotate}}°</div>
+    <image mode="widthFix" src="images/tri.png" style="width:25px;height:25px;margin-top:8px"></image>
+    <div style="position:absolute;right:0px;font-size:32rpx;padding:10px">山向：{{shan}}</div>
+</view>
+<view style="overflow:hidden;padding:2px;position:relative">
+    <image animation="{{animation}}" src="images/{{luopan}}.png" style="width:100%;height:{{panHeight}}px"></image>
+</view>
+<canvas canvasId="customCanvas" style="width:100%;height:{{loupanHeight}}px;position:absolute;top:52px;left:2px;z-index:5000"></canvas>
+<view style="text-align:center">
+    <image bindtap="luopan1" src="images/lp1_s.png" style="width:50px;height:50px;margin:10px;float:left;margin-left:50px"></image>
+    <image bindtap="lock" src="images/{{lock}}.png" style="width:35px;height:35px;margin-top:20px"></image>
+    <image bindtap="luopan2" src="images/lp2_s.png" style="width:50px;height:50px;margin:10px;float:right;margin-right:50px"></image>
+</view>
+<view style=" margin-top: 40rpx;  display: flex;  flex-direction: row;  flex-wrap: wrap;">
+    <view style="width:33%">
+        <picker bindchange="multiSelectorChange" bindtap="pickerTap" disabled="{{pickerDisabled}}" mode="multiSelector" range="{{multiSelectorData}}" style="width:100%" value="{{multiSelectorIndex}}">
+            <button class="{{buttonClass}}" style="width:90%">玄空排盘</button>
+        </picker>
+    </view>
+    <view style="width:33%">
+        <button bindtap="go" class="{{buttonClass}}" data-gid="mod=pan2&act=createShanxiang" style="width:90%">山向奇门</button>
+    </view>
+    <view style="width:33%">
+        <button bindtap="go" class="{{buttonClass}}" data-gid="mod=pan2&act=createLiji" style="width:90%">立极尺</button>
+    </view>
+</view>
+<view style="margin-top:10px;display: flex;  flex-direction: row;  flex-wrap: wrap;padding-bottom:30px">
+    <view style="width:31%;margin-left:1%;height:26px;border:solid 1px #ddd;border-radius:13px;text-align:center;font-size:26rpx;line-height:26px"> 地盘（{{shan}}） </view>
+    <view style="width:31%;margin-left:1%;height:26px;border:solid 1px #ddd;border-radius:13px;text-align:center;font-size:26rpx;line-height:26px"> 人盘（{{renPan}}） </view>
+    <view style="width:31%;margin-left:1%;height:26px;border:solid 1px #ddd;border-radius:13px;text-align:center;font-size:26rpx;line-height:26px"> 天盘（{{tianPan}}） </view>
+</view>

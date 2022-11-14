@@ -1,0 +1,11 @@
+.buttonDisable,.buttonEnable {
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    width: 31%;
+}
+
+.buttonEnable {
+    background: #0dc2b3;
+    color: #fff;
+}
